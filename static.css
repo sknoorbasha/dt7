@@ -241,7 +241,8 @@ footer p {
 }
 
 footer .copy {
-  color: #ccc;
+  color: #fff;
+  font-weight: 600;
 }
 
 /*  
