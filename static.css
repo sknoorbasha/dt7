@@ -243,6 +243,7 @@ footer p {
 footer .copy {
   color: #fff;
   font-weight: 600;
+  text-decoration: none !important;
 }
 
 /*  
