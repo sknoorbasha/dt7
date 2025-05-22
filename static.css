@@ -78,11 +78,21 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     background-image: url(./Images/bg.png);
     align-items: center;
+    
 }
 #home h2{
     font-size: 65px;
     text-align:start;
     color: #f0f0f0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .col{
     flex-basis: 50%;
@@ -91,11 +101,17 @@ nav ul li a:hover {
 .col p {
     font-size: 20px;
     line-height: 25px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1s linear forwards;
 
 }
 .port{
     margin-top: 50px;
     width: 80%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
     box-shadow: 2px 3px 30px rgba(175, 72, 72, 0.05);
 }
 button{
@@ -107,6 +123,9 @@ button{
     cursor: pointer;
     background-color: #ff4000;
     color: #f0f0f0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1.5s linear forwards;
 }
 
 button:hover{
@@ -117,7 +136,7 @@ button:active{
     transform: scale(0.98);
 }
 #about {
-  padding: 200px 40px;
+  padding: 120px 40px;
   max-width: 1920px;
   margin: 0px;
   color: white;
@@ -182,9 +201,17 @@ button:active{
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 #contact {
-  padding: 40px 20px;
-  background-color:#fff;
+  padding: 140px 20px;
+  color:#fff;
   text-align: center;
+  background-image: url(./Images/contact.jpg);
+  background-size: cover; 
+}
+#contact a{
+  color: #000;
+}
+#contact a:hover {
+  color:#f0f0f0;
 }
 .con{
     font-size: 35px;
