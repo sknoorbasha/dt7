@@ -5,10 +5,14 @@ body {
   padding: 0;
   line-height: 1.6;
   background-color: #f9f9f9;
-  color: #333;
+  color: white;
 }
-/* marquee effects */
 .mar{
+  padding: 20px;
+  /* background-color: white; */
+  font-weight: 700;
+}
+#b{
   color: red;
 }
 /* Navigation */
@@ -17,11 +21,14 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 500;
+}
+.bt{
+  transform: none;
 }
 nav img{
     width: 100px;
@@ -70,7 +77,8 @@ nav ul li a:hover {
 }
 
 /* Sections */
-#home {
+#home,
+#about {
     display: flex;
     flex-wrap: wrap;
     padding: 40px 40px;
@@ -117,7 +125,7 @@ nav ul li a:hover {
     animation: moveup 0.5s linear forwards;
     box-shadow: 2px 3px 30px rgba(175, 72, 72, 0.05);
 }
-button{
+.btn {
     font-family:sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -129,27 +137,62 @@ button{
     opacity: 0;
     transform: translateY(30px);
     animation: moveup 1.5s linear forwards;
+    text-decoration: none;
+}
+.btn:hover{
+  color: #f0f0f0;
+  background-color:#000;
+}
+.bt{
+    font-family:sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ff4000;
+    color: #f0f0f0;
+    animation: moveup 1.5s linear forwards;
 }
 
-button:hover{
-    color:#f0f0f0;
-    background-color: #000;
+.bt:hover{
+    color:#000;
+    background-color: #fff;
 }
 button:active{
     transform: scale(0.98);
 }
 #about {
-  padding: 120px 40px;
-  max-width: 1920px;
-  margin: 0px;
-  color: white;
-  background-image: url(./Images/about-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  transform: scaleX(-1);
+  background:none
+}
+.col1 h5{
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 100px;
+}
+.col1 h2{
+  color: #333;
+  font-size: 35px;
+  padding-left: 0px;
+  text-align: start !important;
+  padding-left: 100px;
+}
+.col1 p{
+  color: #333;
+  text-align: justify !important;
+  padding-left: 100px;
+}
+.dt7{
+  display: flex;
+  padding-top: 40px;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+  box-shadow: 2px 3px 30px rgba(175, 72, 72, 0.05);
 }
 #about *{
-    transform: scaleX(-1);
+    width: 600px;
 }
 #about h2{
     font-size: 35px;
